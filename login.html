@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            height: 90vh;
+            align-items: center;
+        }
+
+        .container {
+
+            background-color: aliceblue;
+            padding: 50px;
+            text-align: center;
+
+        }
+
+        input {
+            width: 200px;
+            padding: 10px;
+        }
+
+        p {
+            margin: 0;
+            text-align: left;
+            color: red;
+            margin-bottom: 1rem;
+        }
+
+        input[type='submit']{
+            width: 222px;
+            background-color: blueviolet;
+            color: black;
+            font-weight: bolder;
+            border: 1px solid blueviolet;
+            cursor: grab;
+ 
+        }
+        input[type='submit']:hover {
+            background-color:violet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" onsubmit="return validateForm()">
+            <input id="name" type="text" placeholder="enter your name">
+            <p id="nameError"> </p>
+            <input type="password" placeholder="enter password" id="password">
+            <p id="passError"> </p>
+            <input type="submit">
+        </form>
+    </div>
+
+
+    <script src="login.js"></script>
+</body>
+
+</html>

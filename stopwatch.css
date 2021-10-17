@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background: url(img/bg-2.jpg);
+  flex-direction: column;
+  background-size: cover;
+}
+#container {
+  display: flex;
+}
+.big-text {
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0 2rem;
+}
+.text {
+  text-align: center;
+    
+}
+.text span {
+  font-size: 2rem;
+  font-weight: normal;
+}
+.btn-container {
+  
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  margin: 0 3rem;
+  padding: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  background: rgba(255, 47, 47, 0.794);
+  color: rgb(5, 1, 1);
+  border: rgb(255, 47, 47);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn :hover{
+    background:  black;
+}

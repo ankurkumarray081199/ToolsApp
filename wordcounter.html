@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Word Counter</title>
+    <style>
+        .backg {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            display: inherit;
+            cursor: pointer;
+        }
+
+        #bg {
+            display: inline-block;
+            text-align: right;
+        }
+
+        /* .sticky {
+            margin-top: 0;
+            position: fixed;
+            width: 100%;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4 mb-4" id="bg">
+        <span style="font-weight: bold;height: 20px;" id="choose">Choose your background</span>
+        <span class="backg bg-primary " onclick="changebg('#0d6efd')" id="primary"></span>
+        <span class="backg bg-success" onclick="changebg('#198754')" id="success"></span>
+        <span class="backg bg-warning " onclick="changebg('#ffc107')" id="warning"></span>
+        <span class="backg bg-dark" onclick="changebg('#000')" id="dark"></span>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card bg-success  " style="height: 100px;align-items: center;justify-content: center;">
+                    <a href="login.html" style="width:110px; " class="btn btn-dark btn-outline-warning">Login Here</a>
+                    <a href="slider.html" style="width:100px; "
+                        class="btn btn-dark btn-outline-primary  mt-2">Slider</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card mt-4">
+                    <div class="card-header bg-danger">
+                        <h1 class="display-4 text-center">Word Counter</h1>
+                    </div>
+                    <div class="card-body bg-danger">
+                        <textarea class="form-control bg-light" placeholder="Enter your text" style="font-size: 25px;"
+                            id="text" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="card-footer bg-danger">
+                        <h3 class="display-5">Words <span id="words">0</span> and Characters <span id="char">0</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 300px;"></div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

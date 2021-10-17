@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Page</title>
+    <link rel="stylesheet" href="slider.css">
+</head>
+
+<body>
+    <div class="slide-container">
+        <div class="slide">
+            <img src="img/img5.jpg" height="400" width="100%" alt="">
+            <div class="caption">Caption 1</div>
+        </div>
+
+        <div class="slide">
+            <img src="img/img6.jpg" height="400" width="100%" alt="">
+            <div class="caption">Caption 2</div>
+        </div>
+
+        <div class="slide">
+            <img src="img/img7.jpg" height="400" width="100%" alt="">
+            <div class="caption">Caption 3</div>
+        </div>
+
+        <div class="slide">
+            <img src="img/img8.jpg" height="400" width="100%" alt="">
+            <div class="caption">Caption 4</div>
+        </div>
+
+        <span class="arrow prev" onclick="controller(-1)">&#10094</span>
+        <span class="arrow next" onclick="controller(1)">&#10095</span>
+
+    </div>
+ 
+    <script src="slider.js"></script>
+</body>
+
+</html>
